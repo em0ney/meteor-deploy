@@ -20,4 +20,4 @@ Deploying meteor applications can be bothersome.  On the server side, meteor is 
 This project is still in development.  Here is a prospective wish-list, feel free to fork and contribute:
 
 - Separate configurations for different environments
-- Integration to setup nginx r
+- Integration to setup nginx reverse proxy config for first deployment
