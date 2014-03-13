@@ -13,7 +13,8 @@ Deploying meteor applications can be bothersome.  On the server side, meteor is 
 2. Alter props.conf in the client and server directories.
 3. Copy the contents server directory and common.conf to your application root directory
 4. Copy the contents of the client directory and common.conf to your development machine, to your meteor root directory
-5. Run `deploy.sh` to package and deploy your meteor app
+5. On the server side, make starter.sh executable `chmod 755 starter.sh`
+6. Run `deploy.sh` to package and deploy your meteor app
 
 
 ## To Be Implemented
