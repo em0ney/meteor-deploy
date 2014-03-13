@@ -8,7 +8,7 @@ echo "Unpacking $APPNAME.tgz"
 echo "=========================="
 tar -xvzf "$APPNAME.tgz"
 
-# discard tar.gz file
+# discard tgz file
 echo "=========================="
 echo "Deleting $APPNAME.tgz"
 echo "=========================="

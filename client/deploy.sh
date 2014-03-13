@@ -13,6 +13,11 @@ echo "=========================="
 echo "Copying $APPNAME.tgz to $APP_ROOT_DIR on $HOST"
 echo "=========================="
 scp -P $SSH_PORT "$APPNAME.tgz" "$USER@$HOST:$APP_ROOT_DIR"
+# cleanup local tgz bundle
+echo "=========================="
+echo "Deleting $APPNAME.tgz"
+echo "=========================="
+rm "$APPNAME.tgz"
 # now run server side script to stop, unpack and launch
 echo "=========================="
 echo "Starting launch script on remote host $HOST"
