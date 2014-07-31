@@ -6,6 +6,12 @@ This is a project to simplify the process of packaging, copying and deploying a 
 
 Deploying meteor applications can be bothersome.  On the server side, meteor is just a node application.  Currently, you need to bundle your meteor application, copy to your VPS, untar, rebuild fibers (how irritating), set some environment variables and then launch the app. These simple bash scripts automate this process.
 
+## Dependencies
+
+1. Node.js (obviously)
+2. npm (obviously)
+3. [Forever](https://github.com/nodejitsu/forever) (this is used to keep your node app running forever!)
+
 
 ## Usage
 

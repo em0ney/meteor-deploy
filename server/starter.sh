@@ -19,7 +19,11 @@ echo "=========================="
 echo "Rebuilding fibers"
 echo "=========================="
 pushd bundle/server/node_modules
-rm -r fibers
+rm -rf fibers
+npm install fibers@1.0.0
+popd
+pushd bundle/programs/server/node_modules
+rm -rf fibers
 npm install fibers@1.0.0
 popd
 
@@ -35,4 +39,4 @@ export PORT=$NODE_APP_PORT
 echo "=========================="
 echo "Start app!"
 echo "=========================="
-nohup node bundle/main.js &
+forever start --append -o out.log -e err.log --uid "$APPNAME" bundle/main.js
